@@ -26,29 +26,3 @@ Make a FPV drone
 How to get into FPV drones \-  
 [https://www.youtube.com/watch?v=Xs\_P7T9G49o](https://www.youtube.com/watch?v=Xs_P7T9G49o) 
 
-**Ai research summery** 
-
-Find research papers about computer vision motion detection while the camera is moving
-
-Detecting independently moving objects from a moving camera—commonly referred to as Moving Object Detection (MOD)—requires isolating object dynamics from background shifts caused by camera egomotion.
-
-**Global Motion Compensation & Motion Cues**
-
-* **Hybrid Motion Compensation & Local Fusion:** Recent frameworks combine global motion compensation with dense optical flow to address dynamic scenes and unconstrained camera movement (Chen et al., 2024). Fusing local spatial information with compensated global motion suppresses background interference while maintaining precise foreground boundaries.  
-* **Background Orientation Field Reconstruction:** Optical flow orientation in background regions remains continuous and independent of scene depth. Poisson fusion can reconstruct background orientation fields from optical flow gradients, allowing algorithms to generate motion saliency maps that reveal moving objects without requiring explicit scene depth estimation (Zhang et al., 2020).
-
-**Geometric Constraints & Sensor Fusion**
-
-* **IMU-Assisted Epipolar Geometry:** Integrating hardware sensors like Inertial Measurement Units (IMUs) with vision algorithms yields an accurate initial fundamental matrix for motion compensation (Jung et al., 2019). Point correspondences across consecutive frames are categorized as foreground or background based on their distance from estimated epipolar lines, improving target detection under sudden camera motion.  
-* **Multi-View Geometry & Trifocal Tensors:** Incorporating multi-frame geometric constraints—such as plane-plus-parallax representations, fundamental matrices, and trifocal tensors—allows systems to enforce temporal rigidity constraints and segment moving objects across dynamic urban scenes (ter Haar et al., 2010).
-
-**References**
-
-Chen, Z., Zhao, R., Guo, X., Xie, J., & Han, X. (2024). Moving Object Detection in Freely Moving Camera via Global Motion Compensation and Local Spatial Information Fusion. *Sensors*, *24*(9), 2859\. [https://doi.org/10.3390/s24092859](https://doi.org/10.3390/s24092859) Cited by: 5
-
-Jung, S., Cho, Y., Kim, D., & Chang, M. (2019). Moving Object Detection from Moving Camera Image Sequences Using an Inertial Measurement Unit Sensor. *Applied Sciences*, *10*(1), 268\. [https://doi.org/10.3390/app10010268](https://doi.org/10.3390/app10010268) Cited by: 26
-
-ter Haar, F. B., den Hollander, R. J. M., & Dijk, J. (2010). Detection of moving objects from a moving platform in urban scenes. *SPIE Proceedings*, *7701*, 770105\. [https://doi.org/10.1117/12.848034](https://doi.org/10.1117/12.848034) Cited by: 2
-
-Zhang, W., Sun, X., & Yu, Q. (2020). Moving Object Detection under a Moving Camera via Background Orientation Reconstruction. *Sensors*, *20*(11), 3103\. [https://doi.org/10.3390/s20113103](https://doi.org/10.3390/s20113103) Cited by: 18
-
