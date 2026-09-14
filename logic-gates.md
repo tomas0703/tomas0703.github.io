@@ -1,3 +1,6 @@
+---
+title: Logic Gates
+---
 
 AND Gate
 Beginning on row 12 where the black arrow marks the initial current supply, current travels toward two push-buttons wired in series. When no buttons are pressed (0,0 input) or only one button is pressed (1,0 or 0,1), the series circuit remains broken, leaving current halted along the red trace and keeping the output at 0. Only when both buttons are pressed simultaneously (1,1 input) does the path complete along the green line, allowing current to pass through the pull-down resistor to energize the output rail (1).

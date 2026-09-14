@@ -1,3 +1,7 @@
+---
+title: Wildlife Tracking
+---
+
 New idea work solely on the wild life tracking tech tracking, The main way I can market this is by making a more efficient model 
 
 **DATA GAP**
